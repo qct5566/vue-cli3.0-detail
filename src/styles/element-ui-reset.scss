@@ -1,0 +1,146 @@
+// .el-button + .el-button {
+//   margin-left: 20px;
+// }
+.v-modal {
+  opacity: 0.25;
+}
+//表格
+.el-table {
+  th {
+    background-color: #f7f8fa;
+    font-weight: normal;
+    color: #303133 !important;
+  }
+
+  .el-button--medium {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  &.hide-body {
+    .el-table__empty-block {
+      display: none;
+    }
+  }
+}
+.el-pager {
+  font-weight: 400;
+}
+//对话框
+.el-dialog__footer {
+  text-align: center;
+}
+.el-dialog__title {
+  position: relative;
+  &:after {
+    content: " ";
+    height: 2px;
+    width: 18px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #3ca0ec;
+  }
+}
+.el-form-item {
+  &.full-content {
+    //内容项占满，无标题时使用
+    .el-form-item__content {
+      width: 100%;
+    }
+  }
+}
+//表单 手风琴
+.el-form-item__label {
+  color: #303133;
+}
+.form-collapse {
+  &.el-collapse {
+    border-top: 0;
+    border-bottom: 0;
+  }
+  & > div > div > .el-collapse-item__header {
+    height: 58px;
+    line-height: 58px;
+    color: #3ca0ec;
+    font-size: 16px;
+    border-bottom-color: #ebeef5;
+  }
+  & > div > .el-collapse-item__wrap {
+    border-bottom: 0;
+    & > .el-collapse-item__content {
+      padding: 20px 0px 20px 0px;
+    }
+  }
+}
+
+.el-card {
+  &.menu-card {
+    .el-card__header {
+      padding: 10px 20px;
+    }
+  }
+}
+
+.el-checkbox {
+  &.mr-check {
+    margin-left: 0px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &.hideInput {
+    margin-left: 0px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    .el-checkbox__input {
+      display: none;
+    }
+  }
+  &.choose-item {
+    &.isChecked {
+      .el-checkbox__label {
+        color: #fff !important;
+      }
+    }
+  }
+}
+.el-dialog__body {
+  max-height: 50vh !important;
+  overflow: auto !important;
+}
+//隐藏单选文字
+.el-radio {
+  &.no-label {
+    .el-radio__label {
+      display: none;
+    }
+  }
+  &.no-input {
+    .el-radio__input {
+      display: none;
+    }
+  }
+}
+
+.el-input {
+  &.prepend-select {
+    .el-input-group__prepend {
+      width: 100px;
+    }
+  }
+}
+
+.upload-hide-add .el-upload,
+.upload-hide-add .el-upload--picture-card {
+  display: none !important;
+}
+
+.el-upload-list__item-status-label {
+  .el-icon-circle-check,
+  .el-icon-upload-success {
+    position: absolute;
+    left: 12px;
+  }
+}
